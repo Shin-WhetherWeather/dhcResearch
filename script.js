@@ -283,6 +283,7 @@ document.addEventListener("DOMContentLoaded", function() {
     textTitle = document.getElementById("textTitle");
     textContent = document.getElementById("textContent");
     let startAR = document.getElementById("startAR");
+    let amboOverlay = document.getElementsByClassName("amboOverlay")[0];
 
 	const sceneEl = document.querySelector('a-scene');
 	let arSystem;
@@ -292,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     model.addEventListener("model-loaded", ()=>{
-
+        amboOverlay.style.opacity = 0.1;
         startAR.innerText = "Start AR";
         startAR.classList.remove("inactive");
         startAR.addEventListener("click", function(){
