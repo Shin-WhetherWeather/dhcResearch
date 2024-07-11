@@ -47,7 +47,7 @@
 
     <div id="scanning-overlay" class="hidden">
       <div class="inner">
-        <img src="D4H Poster PALM.jpg">
+        <img src="poster_overlay.jpg">
         <div class="scanline"></div>
       </div>
 
@@ -58,13 +58,17 @@
 
     <div id="loadingScreen" class="loadingScreen">
 
+      <a href="https://www.monash.edu/mada/design-health-collab/projects/product-design-and-wearables/mobile-stroke-imager">
       <div class="logo">
-        <img src="Monash+DHCL-Normal.png">
+          <img src="Monash+DHCL-Normal.png">
       </div>
+    </a>
 
+    <a href="https://micro-x.com/products/ct-brain-scanner/">
       <div class="logo right">
         <img src="micro-x-logo-2021-@2x.png">
       </div>
+    </a>
 
       <div class="textTitle">
         Hello!
@@ -94,7 +98,7 @@
       
     </div>
 
-    <a-scene arjs='sourceType: webcam;' mindar-image="uiScanning:#scanning-overlay; filterMinCF:0.001; filterBeta:0.001; imageTargetSrc: ./palm.mind; autoStart: false;" color-space="sRGB" renderer="colorManagement: true; physicallyCorrectLights:true; highRefreshRate:true;" vr-mode-ui="enabled: false" xr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene arjs='sourceType: webcam;' mindar-image="uiScanning:#scanning-overlay; filterMinCF:0.001; filterBeta:0.001; imageTargetSrc: ./poster_overlay.mind; autoStart: false;" color-space="sRGB" renderer="colorManagement: true; physicallyCorrectLights:true; highRefreshRate:true;" vr-mode-ui="enabled: false" xr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
 	<a-asset-item id="avatarModel" src="ambo_person.glb"></a-asset-item>
       </a-assets>
