@@ -88,15 +88,16 @@ let currentState = 0;
 let sceneFrames = [1,       57,         105,        122,        150,        181,        252,        300,        380];
 let lightColor = [[1,1,1],  [1,1,1],    [1,1,1],    [1,1,1],    [1,1,1],    [0,1,0],    [1,1,0],    [1,1,1],    [1,1,1], [1,1,1]];
 let titleText = [1,2,3,4,5,6,7,8,9,10];
-let sceneText = ["The ambulance arrives to a suspected stroke patient within the golden hour of stroke symptoms.",
-    "The paramedics retrieve the patient and strap them to a stretcher.",
-    "The PAD is placed under the patient.",
-    "The Imager is unlatched from the wall and extended.",
-    "The Detector is unlatched from the wall and attached to the Imager. The system is now ready for scanning.",
-    "The patient is pushed into the ambulance on the stretcher.",
-    "The 21 x-ray tubes fire in sequence through 3 angles to complete a cranial scan.",
-    "The scan is complete, the Detector and Imager are retracted and mounted back onto the wall.",
-    "The PAD is mounted back into the wall. The ambulance is now ready to depart to the hospital."];
+let sceneText = [
+    "The ambulance arrives at a suspected stroke emergency.",
+    "The paramedics retrieve the patient and load them onto the stretcher.",
+    "The patient is positioned using the Positioning Aid Device (PAD).",
+    "The Imager is deployed from the wall.",
+    "The Detector is deployed from the wall and attached to the Imager. The system is now ready for scanning.",
+    "The patient is brought into the ambulance on the stretcher.",
+    "The scans are completed in 8 seconds.",
+    "Once the scanner has finished, the Detector and the Imager are detached and stowed onto the wall.",
+    "The PAD is mounted back into the wall. The ambulance is now ready to depart for the hospital."];
 
 function changeLightColor(color){
     const obj = model.getObject3D('mesh');
