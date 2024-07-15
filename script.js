@@ -96,7 +96,7 @@ let sceneText = [
     "The Detector is deployed from the wall and attached to the Imager. The system is now ready for scanning.",
     "The patient is brought into the ambulance on the stretcher.",
     "The scans are completed in 8 seconds.",
-    "Once the scanner has finished, the Detector and the Imager are detached and stowed onto the wall.",
+    "Once the scan has finished, the Detector and the Imager are detached and stowed onto the wall.",
     "The PAD is mounted back into the wall. The ambulance is now ready to depart for the hospital."];
 
 function changeLightColor(color){
